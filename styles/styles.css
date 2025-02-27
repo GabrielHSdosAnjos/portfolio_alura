@@ -87,13 +87,13 @@ body{
     border-radius: 8px;
     font-size: 1.5rem;
     font-weight: 600;
-    padding: 21.5px; 
+    padding: 21.5px;
     text-decoration: none;
     color: var(--cor-secundaria);
-    font-family:var(--fonte-secundaria);
+    font-family: var(--fonte-secundaria);
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     gap: 16px;
 }
 .titulo_do_links{
@@ -151,19 +151,39 @@ body{
 
 }
 
-@media(max-width:1200px ){
+@media(max-width:768px ){
     .cabecalho{
         padding: 10%;
     }
     .menu_cabecalho{
-        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
 
     }
     #container{
         flex-direction: column-reverse;   
         padding: 5%; 
+        align-items: center;
     }
     .setor{
         width: auto;
+    }
+    .foto_perfil {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .links{
+        width: 80%;
+        font-size: 1.25rem;
+    }
+    .titulo {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    
+    .texto {
+        font-size: 1.25rem;
+        text-align: center;
     }
 }
